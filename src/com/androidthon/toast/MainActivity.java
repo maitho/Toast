@@ -40,8 +40,8 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				//Inflating our custom layout in the LayoutInflator
-				LayoutInflater customInflator = getLayoutInflater();
-				View customLayout = customInflator.inflate(R.layout.custom_layout, (ViewGroup) findViewById(R.id.toast_layout_container));
+				LayoutInflater customInflater = getLayoutInflater();
+				View customLayout = customInflater.inflate(R.layout.custom_layout, (ViewGroup) findViewById(R.id.toast_layout_container));
 				
 				//Getting our defined text view from the custom_layout_container
 				TextView customText = (TextView) customLayout.findViewById(R.id.custom_toast_text);
